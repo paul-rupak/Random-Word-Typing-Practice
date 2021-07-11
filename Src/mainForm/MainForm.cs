@@ -12,7 +12,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Typing_Practice
 {
-    public partial class mainForm : Form
+    public partial class MainForm : Form
     {
         //in this path we wills store settings.json file, this file will contain all the settings made by user
         private const string pathSettingJSON = "C:\\TouchTypingPractice\\settings.json";
@@ -31,7 +31,7 @@ namespace Typing_Practice
         private int remainingMin;
         private int remainingSec;
 
-        public mainForm()
+        public MainForm()
         {
             InitializeComponent();
 
@@ -121,7 +121,7 @@ namespace Typing_Practice
                     int correctEntries = totalEntries - incorrectEntries;
                     int speed = correctEntries / 5 / allocatedMin;
                     double accuracy = Convert.ToDouble(correctEntries) / Convert.ToDouble(totalEntries) * 100.0;
-                    new testResultDialog(speed, accuracy, correctEntries, incorrectEntries, allocatedMin).ShowDialog();
+                    new TestResultDialog(speed, accuracy, correctEntries, incorrectEntries, allocatedMin).ShowDialog();
                     
                     //----------------need to save the typing speed in a file for future analysis ------------------
 

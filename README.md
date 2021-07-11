@@ -17,6 +17,10 @@ Typing practice area: to start typing select a duration and click on start butto
 
 ![Typing Area](/Screenshot/typing.png)
 
+Typing result:
+
+![Typing Result](/Screenshot/typing-result.png)
+
 ## Work-In-Progress
 * **Setting button**: through settings button user will be able to choose set of characters for typing.
 * **View statistics button**: through this button user will be able to view statistics of his/her typing speed.

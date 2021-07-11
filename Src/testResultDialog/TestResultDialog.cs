@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Typing_Practice
 {
-    public partial class testResultDialog : Form
+    public partial class TestResultDialog : Form
     {
         private int speed;
         private double accuracy;
@@ -19,7 +19,7 @@ namespace Typing_Practice
         private int totalEntries;
         private int totalTime;
 
-        public testResultDialog(int speed, double accuracy, int correctEntries, int incorrectEntries, int totalTime)
+        public TestResultDialog(int speed, double accuracy, int correctEntries, int incorrectEntries, int totalTime)
         {
             InitializeComponent();
 
