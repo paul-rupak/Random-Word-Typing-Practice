@@ -96,6 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\setupFiles\settings.json" />
     <None Include="Resources\touch-type.png" />
   </ItemGroup>
   <ItemGroup>

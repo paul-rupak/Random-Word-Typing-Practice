@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using System.Reflection;
 
 namespace Typing_Practice
 {
     public partial class MainForm : Form
     {
         //in this path we wills store settings.json file, this file will contain all the settings made by user
-        private const string pathSettingJSON = "C:\\TouchTypingPractice\\settings.json";
+        private const string pathSettingJSON = "C:\\Random-Word-Typing-Practice\\settings.json";
 
         //maximum length of a word that will be generated randomly
         private const int maxWordLength = 8;
@@ -46,6 +47,17 @@ namespace Typing_Practice
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.MinimumSize = new Size(1000, 599);
+
+            //if settings.json file does not exist in the expected path then we are creating this 
+            if (File.Exists(pathSettingJSON) == false)
+            {
+                Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Typing_Practice.Resources.setupFiles.settings.json");
+                Directory.CreateDirectory(Path.GetDirectoryName(pathSettingJSON));
+                FileStream fileStream = File.Create(pathSettingJSON);
+
+                stream.CopyTo(fileStream);
+                fileStream.Close();
+            }
         }
 
         private void MainForm_Paint(object sender, PaintEventArgs e)
