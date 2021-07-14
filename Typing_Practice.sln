@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA0EFD66-62C7-4AC2-9E46-07BD7E709604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA0EFD66-62C7-4AC2-9E46-07BD7E709604}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA0EFD66-62C7-4AC2-9E46-07BD7E709604}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA0EFD66-62C7-4AC2-9E46-07BD7E709604}.Release|Any CPU.Build.0 = Release|Any CPU
+		
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD5749D4-68BA-4596-8B74-3736DBE0ADFC}
+	EndGlobalSection
+	lobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD5749D4-68BA-4596-8B74-3736DBE0ADFC}
 	EndGlobalSection
 EndGlobal
