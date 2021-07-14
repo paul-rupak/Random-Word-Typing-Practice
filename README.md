@@ -22,7 +22,6 @@ Typing result:
 ![Typing Result](/Screenshot/typing-result.png)
 
 ## Work-In-Progress
-* **Setting button**: through settings button user will be able to choose set of characters for typing.
 * **View statistics button**: through this button user will be able to view statistics of his/her typing speed.
 * **About button**: will show some information about this application.
 
